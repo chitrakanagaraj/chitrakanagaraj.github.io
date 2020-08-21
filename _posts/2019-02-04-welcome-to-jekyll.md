@@ -2,7 +2,7 @@
 layout: post
 title:  "Welcome to devlopr jekyll !"
 summary: Hello World ! This is a sample post
-author: John Doe
+author: chitra
 date: '2019-05-22 14:35:23 +0530'
 category: jekyll
 thumbnail: /assets/img/posts/code.jpg
