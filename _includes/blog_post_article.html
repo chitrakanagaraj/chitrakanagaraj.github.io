@@ -1,3 +1,7 @@
+
+{% assign usertype = page.author %}
+{% assign user = site.users | where: "author", usertype | first %}
+
 <article class="card" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="card-header">
     <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
@@ -5,7 +9,7 @@
     <p class="post-summary">
       Posted by : {% if page.author %}
       <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <span itemprop="name"><a href="{{site.author_website_url}}">{{ page.author }}</a></span> </span
+        <span itemprop="name"><a href="{{user.author_website_url}}">{{ user.author_name }}</a></span> </span
       >{% endif %} at
       <time datetime="{{ page.date }}" itemprop="datePublished"
         >{{ page.date | date: "%b %-d, %Y" }}</time
