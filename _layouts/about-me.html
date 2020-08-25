@@ -11,57 +11,41 @@ layout: default
       </a>
       <h1 class="profile-name">{{ user.author_name }}</h1>
       <p class="profile-bio">{{ user.author_bio }}</p>
-      {% if user.github_username %} {%- include github_follow_button.html -%} {%
+      {% if user.github_username %}
+      <!-- Place this tag where you want the button to render. -->
+      <a class="github-button" href="https://github.com/{{user.github_username}}" data-size="large"
+        data-color-scheme="no-preference: dark; light: dark; dark: dark;" data-show-count="true"
+        aria-label="Follow @{{user.github_username}} on GitHub">Follow @{{ user.github_username }}</a>
+      {%
       endif %}
 
       <p class="profile-links">
         {% if user.twitter_username %}
-        <a
-          class="social-link"
-          href="http://twitter.com/{{ user.twitter_username }}"
-        >
+        <a class="social-link" href="http://twitter.com/{{ user.twitter_username }}">
           <i class="fab fa-twitter"></i>
         </a>
         {% endif %} {% if user.facebook_username %}
-        <a
-          class="social-link"
-          href="http://facebook.com/{{ user.facebook_username }}"
-        >
+        <a class="social-link" href="http://facebook.com/{{ user.facebook_username }}">
           <i class="fab fa-facebook-f"></i>
         </a>
         {% endif %} {% if user.instagram_username %}
-        <a
-          class="social-link"
-          href="http://instagram.com/{{ user.instagram_username }}"
-        >
+        <a class="social-link" href="http://instagram.com/{{ user.instagram_username }}">
           <i class="fab fa-instagram"></i>
         </a>
         {% endif %} {% if user.medium_username %}
-        <a
-          class="social-link"
-          href="http://medium.com/@{{ user.medium_username }}"
-        >
+        <a class="social-link" href="http://medium.com/@{{ user.medium_username }}">
           <i class="fab fa-medium-m"></i>
         </a>
         {% endif %} {% if user.github_username %}
-        <a
-          class="social-link"
-          href="http://github.com/{{ user.github_username }}"
-        >
+        <a class="social-link" href="http://github.com/{{ user.github_username }}">
           <i class="fab fa-github"></i>
         </a>
         {% endif %} {% if user.behance_username %}
-        <a
-          class="social-link"
-          href="http://behance.net/{{ user.behance_username }}"
-        >
+        <a class="social-link" href="http://behance.net/{{ user.behance_username }}">
           <i class="fab fa-behance"></i>
         </a>
         {% endif %} {% if user.linkedin_username %}
-        <a
-          class="social-link"
-          href="http://linkedin.com/in/{{ user.linkedin_username }}"
-        >
+        <a class="social-link" href="http://linkedin.com/in/{{ user.linkedin_username }}">
           <i class="fab fa-linkedin-in"></i>
         </a>
         {% endif %} {% if user.telegram_username %}
@@ -69,17 +53,11 @@ layout: default
           <i class="fab fa-telegram-plane"></i>
         </a>
         {% endif %} {% if user.dribbble_username %}
-        <a
-          class="social-link"
-          href="https://dribbble.com/{{ user.dribbble_username }}"
-        >
+        <a class="social-link" href="https://dribbble.com/{{ user.dribbble_username }}">
           <i class="fab fa-dribbble"></i>
         </a>
         {% endif %} {% if user.flickr_username %}
-        <a
-          class="social-link"
-          href="https://www.flickr.com/photos/{{ user.flickr_username }}"
-        >
+        <a class="social-link" href="https://www.flickr.com/photos/{{ user.flickr_username }}">
           <i class="fab fa-flickr"></i>
         </a>
         {% endif %}
@@ -96,8 +74,7 @@ layout: default
 
     <div class="card">
       <h1>Skills</h1>
-
-      {%- include author_skills.html -%}
+      <p>{{user.skills}}</p>
     </div>
 
     {% if user.wakatime_username %}
@@ -122,19 +99,14 @@ layout: default
       == true %}
       <div class="row" id="project-card">
         <div class="col-md-6">
-          <img
-            src="{{site.url}}{{site.baseurl}}/assets/img/{{project.project_thumbnail}}"
-            class="project-img"
-          />
+          <img src="{{site.url}}{{site.baseurl}}/assets/img/{{project.project_thumbnail}}" class="project-img" />
         </div>
         <div class="col-md-4 center">
           <h4 class="experience-title">{{ project.project_title }}</h4>
           <h6 class="experience-info">{{ project.project_info}}</h6>
           <p class="experience-desc">{{ project.project_description }}</p>
           <p>
-            <a class="project-link" href="{{project.project_url}}"
-              >{{ project.project_url}}</a
-            >
+            <a class="project-link" href="{{project.project_url}}">{{ project.project_url}}</a>
           </p>
         </div>
       </div>
@@ -149,10 +121,7 @@ layout: default
       %}
       <div class="row">
         <div class="col-md-2">
-          <img
-            src="{{site.url}}{{site.baseurl}}/assets/img/{{ exp.company_logo }}"
-            class="company-logo"
-          />
+          <img src="{{site.url}}{{site.baseurl}}/assets/img/{{ exp.company_logo }}" class="company-logo" />
         </div>
         <div class="col-md-6">
           <h4 class="experience-title">{{ exp.designation }}</h4>
@@ -171,10 +140,7 @@ layout: default
       == true %}
       <div class="row">
         <div class="col-md-2">
-          <img
-            src="{{site.url}}{{site.baseurl}}/assets/img/{{ detail.college_logo}}"
-            class="company-logo"
-          />
+          <img src="{{site.url}}{{site.baseurl}}/assets/img/{{ detail.college_logo}}" class="company-logo" />
         </div>
         <div class="col-md-6">
           <h4 class="experience-title">{{detail.college_degree }}</h4>
