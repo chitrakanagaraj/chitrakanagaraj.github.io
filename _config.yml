@@ -1,18 +1,18 @@
 title: We are Programmers!
-subtitle: We are Programmers
+subtitle: We are Programmers!
 description: >- # this means to ignore newlines until "baseurl:"
   devlopr-jekyll is a Jekyll Theme Built For Developers
 
-url: "" # the base hostname & protocol for your site, e.g. https://example.github.io
+url: "https://weareprogrammers.in" # the base hostname & protocol for your site, e.g. https://example.github.io
 baseurl: "" # the subpath of your site, e.g. /blog
 
 urls:
     - text: About Us
       url: /about
       sub:
-        - text: chitra
+        - text: Chitra K
           url: /chitra
-        - text: nithyanantham
+        - text: Nithyanantham S
           url: /nithyanantham
     - text: Blog
       url: /blog
@@ -21,37 +21,38 @@ urls:
     - text: Contact Us
       url : /contact
 
-typewrite-text: devlopr is a jekyll theme built for developers. You can edit this in _config.yml file
-home_image: profile.png 
+typewrite-text: We are Programmers! is our personal blog. Here we post our daily learnings.
+home_image: profile.png
     
 # Edit these details
 users:
   - author: chitra
     author_logo: profile.png
     author_name: Chitra Kanagaraj
-    author_bio: Hi, my name is John Doe. I built this site using devlopr-jekyll :D
-    author_email: "mail@sujaykundu.com"
+    author_bio: Hi, my name is Chitra Kanagaraj. I built this site using devlopr-jekyll :D
+    author_email: "chitrakanagaraj.m@gmail.com"
     author_location: India
     author_website_url: "https://weareprogrammers.in"
+    skills: PHP, drupal 7, drupal 8, html5, css3
     author_work_experiences:
-                - company_name: Google
-                  company_logo: google.png
-                  company_url: https://google.com
+                - company_name: NdimensionZ
+                  company_logo: ndz.png
+                  company_url: https://www.ndimensionz.com/
                   designation: Software Engineer
-                  description: Worked on various Google Products
+                  description: Worked on various Drupal Projects
                   visibility: true
-                - company_name: Microsoft
-                  company_logo: microsoft.png
-                  company_url: https://microsoft.com
-                  designation: Azure Developer
-                  description: Worked on various Azure Cloud Products
+                - company_name: Cube45
+                  company_logo: cube.jpg
+                  company_url: https://www.cube45.com/
+                  designation: Drupal Developer
+                  description: Worked on various Drupal 8 Projects
                   visibility: true
     author_education_details:
-                  - college_logo: mit.png
-                    college_name: MIT
-                    college_url: https://mit.org
-                    college_degree: CS Engineer
-                    description: Bachelor of Technology
+                  - college_logo: bec.png
+                    college_name: Builders Engineering College
+                    college_url: https://builderscollege.edu.in/
+                    college_degree: BE ECE
+                    description: Bachelor of Engineering in Electornical and Communication Engineering
                     visibility: true
     author_project_details:
                   - project_thumbnail: gamershub.png
@@ -66,44 +67,45 @@ users:
                     visibility: true
     show_author_work_experiences: true
     show_author_education_details: true
-    show_author_project_details: true
+    show_author_project_details: false
     # social links
-    twitter_username: johndoe
-    github_username:  sujaykundu777
-    facebook_username: johndoe
-    linkedin_username: johndoe
-    behance_username: johndoe
-    instagram_username: johndoe
-    medium_username: johndoe
-    telegram_username: johndoe
-    dribbble_username: johndoe
-    flickr_username: johndoe
+    twitter_username: chitrakanagaraj
+    github_username:  chitrakanagaraj
+    facebook_username: chitrakanagaraj
+    linkedin_username: chitrakanagaraj
+    # behance_username: johndoe
+    # instagram_username: johndoe
+    # medium_username: johndoe
+    # telegram_username: johndoe
+    # dribbble_username: johndoe
+    # flickr_username: johndoe
   - author: nithyanantham
     author_logo: profile.png
     author_name: Nithyanantham Subramaniam
-    author_bio: Hi, my name is John Doe. I built this site using devlopr-jekyll :D
-    author_email: "mail@sujaykundu.com"
+    author_bio: Hi, my name is Nithyanantham Subramaniam. I built this site using devlopr-jekyll :D
+    author_email: "nithyananthamn@gmail.com"
     author_location: India
     author_website_url: "https://weareprogrammers.in"
+    skills: .net core, docker, azure, c#
     author_work_experiences:
-                - company_name: Google
-                  company_logo: google.png
-                  company_url: https://google.com
-                  designation: Software Engineer
-                  description: Worked on various Google Products
+                - company_name: Honeywell
+                  company_logo: honeywell.png
+                  company_url: https://honeywell.com
+                  designation: Tech Lead
+                  description: Worked on MaxProCloud
                   visibility: true
-                - company_name: Microsoft
-                  company_logo: microsoft.png
-                  company_url: https://microsoft.com
-                  designation: Azure Developer
+                - company_name: TCS
+                  company_logo: tcs.png
+                  company_url: https://tcs.com
+                  designation: IT Analyst
                   description: Worked on various Azure Cloud Products
                   visibility: true
     author_education_details:
-                  - college_logo: mit.png
-                    college_name: MIT
-                    college_url: https://mit.org
-                    college_degree: CS Engineer
-                    description: Bachelor of Technology
+                  - college_logo: bu.png
+                    college_name: Bharathiar University
+                    college_url: www.b-u.ac.in
+                    college_degree: MCA
+                    description: Master of Computer Application
                     visibility: true
     author_project_details:
                   - project_thumbnail: gamershub.png
@@ -118,33 +120,33 @@ users:
                     visibility: true
     show_author_work_experiences: true
     show_author_education_details: true
-    show_author_project_details: true
+    show_author_project_details: false
 
     # social links
-    twitter_username: johndoe
-    github_username:  sujaykundu777
-    facebook_username: johndoe
-    linkedin_username: johndoe
-    behance_username: johndoe
-    instagram_username: johndoe
-    medium_username: johndoe
-    telegram_username: johndoe
-    dribbble_username: johndoe
-    flickr_username: johndoe
+    twitter_username: snithyanantham
+    github_username:  snithyanantham
+    facebook_username: snithyanantham
+    linkedin_username: snithyanantham
+    # behance_username: johndoe
+    # instagram_username: johndoe
+    # medium_username: johndoe
+    # telegram_username: johndoe
+    # dribbble_username: johndoe
+    # flickr_username: johndoe
 
 #for comments ( we got Disqus and Hyvor Commenting, uncomment the one you want to use )
 
 # disqus_shortname: sujay-kundu
-hyvor_talk_website_id: 476
+hyvor_talk_website_id: 1728
 
 # wakatime username (coding activity)
 wakatime_username: sujaykundu777
 
 # mailchimp embedded form url (newsletter):
-mailchimp_form_url: https://sujaykundu.us10.list-manage.com/subscribe/post?u=50bab1c85eae24ecfb0f68361&amp;id=3a2dd721d0
+mailchimp_form_url: 
 
 # formspree (contact form)
-formspree_email: johndoe@gmail.com
+formspree_email: xoqkzrob
 
 # syntax highlighter
 markdown: kramdown
@@ -155,11 +157,11 @@ permalink: pretty
 
 # algolia search
 algolia:
-  application_id: D9WA1YKTRQ
+  application_id: PUEIYIEFE9
   index_name: blog_posts # You can replace that with whatever name you want
   files_to_exclude: []
   nodes_to_index: 'article'
-  search_only_api_key: 58ffdd7cd6c45ec1577a7fcd789b1b9a
+  search_only_api_key: 7b5b0c14f31b2156801d39cfda033820
 
 # pagination of posts
 paginate: 4
